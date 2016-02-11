@@ -5,9 +5,6 @@ exports.randomPalette = function(req, res) {
 	var randomPalette = palettes[Math.floor(palettes.length * Math.random())];
 	//res.send('Your random palette is called: ' + randomPalette['title']);
 	res.json(randomPalette);
-  var colors = randomPalette['colors'];
-  var hex = colors['hex'];
-  console.log(hex);
 }
 
 /*var colors = [
